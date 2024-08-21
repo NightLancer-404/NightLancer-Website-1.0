@@ -1,3 +1,6 @@
+# NightLancer-Website-1.0
+A modern web application tailored for a NightLancer, providing high-quality website design, API creation, logo development, and responsive, future-forward web solutions.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,3 +37,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Development Guidelines
+### Project Structure
+#### Maintain a Structured Project:
+Every section of the application should have its own dedicated component.
+
+All assets related to a section component should be organized in separate sub-components.
+
+### Naming Conventions
+**Component Files:** Use `PascalCase` (*e.g., Component.tsx*).
+
+**Folders:** Use `MACRO_CASE` (*e.g., COMPONENTS*).
+
+**Routes:** Use `snake_case` (*e.g., route.tsx*).
+
+### Frontend Styling
+**Class Names:** Always use `camelCase` for CSS class names.
+
+### Branching
+**Experimental Features:** If you need to add experimental features, use the `experimental` branch.
+
+### Version Control
+**Before Development:** Always pull the latest changes.
+
+**After Development:** Always push your updates.
+Code Quality
+
+### Clean and Readable Code:
+Ensure your code is clean and easily readable by other developers.
+
+Avoid using unnecessary `className`, `fileName`, or `<div>` elements.
+
+Use meaningful names for everything to enhance readability.
+
+Always format your code and remove unnecessary `imports`.
+
+### Final Note
+**Happy Coding! 😊**
