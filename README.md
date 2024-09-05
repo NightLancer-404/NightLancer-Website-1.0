@@ -54,7 +54,7 @@ All assets related to a section component should be organized in separate sub-co
 **Routes:** Use `snake_case` (*e.g., route.tsx*).
 
 ### Frontend Styling
-**Class Names:** Always use `camelCase` for CSS class names.
+**Class Names:** Always use `snake_case` for CSS class names.
 
 ### Branching
 **Experimental Features:** If you need to add experimental features, use the `experimental` branch.

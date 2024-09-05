@@ -64,7 +64,7 @@
   --h6--line-height-md: 1.129rem;
   --h6--font-size-sm: 1rem;
   --h6--line-height-sm: 1.129rem;
-  --h4--font-weight-bold: 700;
+  --h6--font-weight-bold: 700;
   --body--font-size-2xl: 1.25rem;
   --body--line-height-2xl: 1.875rem;
   --body--font-size-xl: 1.125rem;
@@ -188,9 +188,108 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background--secondary);
+}
+
 /* -----------------------------------Announcement Banner------------------------- */
+.announcement_banner {
+  background: var(--dark);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 0;
+  width: 100%;
+}
+
+.announcement_banner_text {
+  font-family: 'Raleway-Medium', sans-serif;
+  font-style: italic;
+  font-size: .7rem;
+  letter-spacing: var(--body--letter-spacing);
+}
 
 /* ---------------------------------------Nav Bar-------------------------------- */
+.navbar {
+  background-color: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  width: 100%;
+  z-index: 40;
+}
+
+.logo {
+  background: var(--body-font-2);
+  color: var(--heading-font);
+  font-size: large;
+  font-weight: 700;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_items {
+  color: var(--heading-font);
+  font-family: 'ClashGrotesk-Medium', sans-serif;
+  font-size: 1.25rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav_items {
+  span {
+    transition: all .3s ease-in-out;
+  }
+}
+
+.small_screen_nav_button,
+.whatsapp_button {
+  display: none;
+}
+
+.small_screen_navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #00000080;
+  backdrop-filter: blur(15px);
+  z-index: 50;
+  overflow-y: scroll;
+  overflow: hidden;
+  transition: width .3s ease-in-out;
+}
+
+.small_screen_cross {
+  height: 2rem;
+  width: 2rem;
+  color: var(--heading-font);
+}
+
+.small_screen_cross:hover {
+  opacity: .6;
+}
+
+.nav_items_sidebar {
+  color: var(--heading-font);
+  font-family: 'ClashGrotesk-Medium', sans-serif;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #3f3f46;
+  border-bottom: 1px solid #3f3f46;
+}
+
+.nav_item_sidebar {
+  border-bottom: 1px solid #3f3f46;
+  padding: .65rem 1.5rem;
+}
+
 
 /* -----------------------------------Hero Section-------------------------------- */
 
@@ -211,3 +310,37 @@
 /* ----------------------------------Footer Section------------------------------ */
 
 /* ---------------------------------Responsive Codes----------------------------- */
+@media only screen and (max-width: 640px) {
+  .announcement_banner {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .connect_button {
+    display: none;
+  }
+
+  .whatsapp_button {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .nav_items,
+  .connect_button,
+  .whatsapp_button {
+    display: none;
+  }
+
+  .small_screen_nav_button {
+    display: block;
+  }
+}
