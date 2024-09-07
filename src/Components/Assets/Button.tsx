@@ -54,14 +54,14 @@ export function Button({ children, containerClassName, className, as: Tag = "but
             }}
             onMouseLeave={() => setHovered(false)}
             className={cn(
-                "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+                "relative flex rounded-full border content-center bg-[#000000f2] hover:opacity-70 transition duration-500 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
                 containerClassName
             )}
             {...props}
         >
             <div
                 className={cn(
-                    "w-auto text-white z-10 bg-black px-4 py-2 rounded-[inherit]",
+                    "w-auto text-white z-10 bg-[#000000f2] px-4 py-2 rounded-[inherit]",
                     className
                 )}
             >
@@ -85,7 +85,7 @@ export function Button({ children, containerClassName, className, as: Tag = "but
                 }}
                 transition={{ ease: "linear", duration: duration ?? 1 }}
             />
-            <div className="bg-black absolute z-1 flex-none inset-[10px] rounded-[100px]" />
+            <div className="absolute z-1 flex-none inset-[10px] rounded-[100px]" />
         </Tag>
     );
 }
