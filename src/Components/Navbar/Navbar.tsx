@@ -25,7 +25,9 @@ const Navbar = () => {
     return (
         <>
             <div className={fix ? `navbar fixed top-0  backdrop-blur-[15px] ` : `navbar`}>
-                <div className='logo'>Logo</div>
+                <Link href={'/'}>
+                    <img src="/images/Logos/Nightlancer-Logo.png" alt="LOGO" className='w-16' />
+                </Link>
                 <div className='nav_items'>
                     <Link href={'/'} className='group'>
                         <span className='group-hover:opacity-60'>Home</span>

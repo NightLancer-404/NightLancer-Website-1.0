@@ -8,7 +8,9 @@ const Sidebar = ({ active, setActive }: any) => {
         <div className={`small_screen_navbar ${active ? 'w-[350px] max-[350px]:w-[100%]' : 'w-[0]'}`}>
             <div className='flex flex-col justify-center py-10 gap-8'>
                 <div className='flex justify-between items-center w-[100%] px-6'>
-                    <div className='logo'>Logo</div>
+                    <Link href={'/'}>
+                        <img src="/images/Logos/Nightlancer-Logo.png" alt="LOGO" className='w-16' />
+                    </Link>
                     <SquareX className='small_screen_cross' onClick={() => setActive(false)} />
                 </div>
                 <div className='nav_items_sidebar'>

@@ -245,18 +245,6 @@ body {
   z-index: 40;
 }
 
-.logo {
-  background: var(--body-font-2);
-  color: var(--heading-font);
-  font-size: large;
-  font-weight: 700;
-  height: 3.5rem;
-  width: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .nav_items {
   color: var(--heading-font);
   font-family: 'ClashGrotesk-Medium', sans-serif;
@@ -293,6 +281,7 @@ body {
   height: 2rem;
   width: 2rem;
   color: var(--heading-font);
+  cursor: pointer;
 }
 
 .small_screen_cross:hover {
