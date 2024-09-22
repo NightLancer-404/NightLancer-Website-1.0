@@ -7,6 +7,7 @@ import Hero from "@/Components/Hero/Hero";
 import LetsStarted from "@/Components/LetsStarted/LetsStarted";
 import MYPE from "@/Components/MYPE/MYPE";
 import Navbar from "@/Components/Navbar/Navbar";
+import ProjectRoadmap from "@/Components/ProjectRoadmap/ProjectRoadmap";
 import Services from "@/Components/Services/Services";
 import WhyUs from "@/Components/WhyUs/WhyUs";
 
@@ -22,6 +23,7 @@ export default function Home() {
         <AboutUs />
         <Services />
         <MYPE />
+        <ProjectRoadmap />
         <FAQ />
         <LetsStarted />
         <Footer />

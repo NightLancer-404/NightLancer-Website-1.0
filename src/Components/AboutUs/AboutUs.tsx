@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Headings from '../Assets/Headings'
+import ImageCarousel from '../Assets/ImageCarousel'
 
 const AboutUs = () => {
     return (
@@ -31,6 +32,10 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <p className='text-[#fafafa] text-center mb-6'>Let's take a look at our previous projects…</p>
+                <ImageCarousel />
             </div>
         </>
     )

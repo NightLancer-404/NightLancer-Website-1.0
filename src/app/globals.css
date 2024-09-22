@@ -329,6 +329,50 @@ body {
 }
 
 /* ---------------------------------About Us Section----------------------------- */
+.bg-gradient-main {
+  background: linear-gradient(0deg, rgba(23, 21, 47, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-gradient-top {
+  background: linear-gradient(to bottom, #000000f2, transparent);
+}
+
+.bg-gradient-bottom {
+  background: linear-gradient(0deg, rgba(23, 21, 47, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes scrollY {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollY-reverse {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.animate-scrollY {
+  animation: scrollY 300s linear infinite;
+}
+
+.animate-scrollY-reverse {
+  animation: scrollY-reverse 300s linear infinite;
+}
+
+.vertical-marquee-image {
+  border: 1px solid #ffffff26;
+  width: 100%;
+}
 
 /* ---------------------------------Services Section----------------------------- */
 .services,
@@ -369,6 +413,31 @@ body {
 }
 
 /* -----------------------------Project Roadmap Section------------------------- */
+.Roadmap {
+  padding: 2.5rem 1rem;
+  background: var(--background--primary);
+}
+
+.Roadmap_card {
+  background: var(--dark--box-bg-2);
+  padding: 2rem 2rem;
+  border-radius: 1.5rem;
+  margin: 1px 1px;
+}
+
+.roadmap_card_bg1 {
+  background: linear-gradient(90deg, rgba(149, 44, 161, 1) 0%, rgba(97, 0, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roadmap_card_bg {
+  background: linear-gradient(90deg, rgba(149, 44, 161, 1) 0%, rgba(97, 0, 255, 1) 100%);
+}
+
+.progress_bar_bg {
+  background: var(--dark--box-bg-2);
+}
 
 /* ------------------------------------FAQs Section----------------------------- */
 .faq {

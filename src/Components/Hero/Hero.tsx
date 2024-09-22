@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Button } from '../Assets/Button'
 import { Loader2, MoveRight } from 'lucide-react'
 import TechIons from '../Assets/TechIons'
+import RoboSpline from '../Assets/RoboSpline'
 
 const Hero = () => {
     const [isLoading, setIsLoading] = useState(false)
@@ -29,8 +30,8 @@ const Hero = () => {
                 </Button>
                 <TechIons />
             </div>
-            <div className='col-span-2 max-[991px]:mt-16 flex items-center justify-center'>
-                <img src="/images/Hero/Temp-Robo.webp" alt="Loading..." />
+            <div className='col-span-2 max-[991px]:mt-16 flex items-center justify-center '>
+                <RoboSpline />
             </div>
             <div className='w-[100%] absolute -top-36 left-0 -z-20 overflow-hidden'>
                 <svg width="542" height="823" viewBox="0 0 542 823" fill="none" xmlns="http://www.w3.org/2000/svg">
