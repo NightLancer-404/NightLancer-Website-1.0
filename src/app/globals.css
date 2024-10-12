@@ -413,8 +413,33 @@ body {
 }
 
 /* -----------------------------Project Roadmap Section------------------------- */
+.roadmap-card-gradient-border {
+  position: relative;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background: var(--dark--box-bg-2);
+}
+
+.roadmap-card-gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(90deg, #952ca1, #6100ff);
+  border-radius: 1.5rem;
+}
+
+
+.roadmap_card_title {
+  font-family: 'ClashGrotesk-Medium', sans-serif;
+  font-size: var(--h3--font-size-2xl);
+  line-height: var(--h3--line-height-2xl);
+}
+
 .Roadmap {
-  padding: 2.5rem 1rem;
   background: var(--background--primary);
 }
 
@@ -426,13 +451,28 @@ body {
 }
 
 .roadmap_card_bg1 {
-  background: linear-gradient(90deg, rgba(149, 44, 161, 1) 0%, rgba(97, 0, 255, 1) 100%);
+  background: linear-gradient(90deg, #952ca1 0%, #6100ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .roadmap_card_bg {
   background: linear-gradient(90deg, rgba(149, 44, 161, 1) 0%, rgba(97, 0, 255, 1) 100%);
+}
+
+/* .roadmap-card-anime {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .progress_bar_bg {
