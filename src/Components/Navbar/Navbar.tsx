@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className={fix ? `navbar fixed top-0  backdrop-blur-[15px] ` : `navbar`}>
+            <div className={fix ? `navbar fixed top-0  backdrop-blur-[15px]` : `navbar`}>
                 <Link href={'/'}>
                     <img src="/images/Logos/Nightlancer-Logo.png" alt="LOGO" className='w-16' />
                 </Link>
