@@ -53,13 +53,13 @@ const FAQ = () => {
                         <path d="M91.0001 723.749C21.9757 724.991 -44.1662 430.617 -46.4033 306.193C-48.6404 181.769 100.373 -121.511 124.932 184.157C159.5 351.5 197.118 380.383 256.851 447.277C259.088 571.701 160.025 722.508 91.0001 723.749Z" fill="url(#paint0_linear_1319_106)" />
                     </g>
                     <defs>
-                        <filter id="filter0_f_1319_106" x="-97.4282" y="0.945312" width="405.316" height="773.808" filterUnits="userSpaceOnUse" colorInterpolation-filters="sRGB">
+                        <filter id="filter0_f_1319_106" x="-97.4282" y="0.945312" width="405.316" height="773.808" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                             <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                             <feGaussianBlur stdDeviation="25.5" result="effect1_foregroundBlur_1319_106" />
                         </filter>
                         <linearGradient id="paint0_linear_1319_106" x1="-108.024" y1="350.915" x2="141.928" y2="345.766" gradientUnits="userSpaceOnUse">
-                            <stop offset="0.311" stop-color="#0F0E20" stop-opacity="0" />
+                            <stop offset="0.311" stopColor="#0F0E20" stopOpacity="0" />
                             <stop offset="0.946" stopColor="#6100FF" stopOpacity="0.3" />
                         </linearGradient>
                     </defs>
