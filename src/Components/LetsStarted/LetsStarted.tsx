@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Button } from '../Assets/Button'
 import { Loader2, MoveRight } from 'lucide-react'
+import Link from 'next/link'
 
 const LetsStarted = () => {
     const [isLoading, setIsLoading] = useState(false)
@@ -13,21 +14,23 @@ const LetsStarted = () => {
                 <h1 className='hero_title'>Let's Get Started</h1>
                 <p className='description text-[#fafafa]'>be a part of an exciting journey toward innovation and success. Together, we can achieve great things!</p>
             </div>
-            <Button
-                containerClassName="rounded-full"
-                as="button"
-                className="px-6"
-                gradientColor={`#952CA1`}
-            >
-                <span className='flex  justify-center items-center gap-2'>
-                    Connect on whatsapp
-                    {
-                        isLoading ?
-                            <Loader2 className='h-6 w-6 animate-spin' />
-                            : <MoveRight className='h-6 w-6' />
-                    }
-                </span>
-            </Button>
+            <Link href={'https://wa.me/918328837701'} target='_blank'>
+                <Button
+                    containerClassName="rounded-full"
+                    as="button"
+                    className="px-6"
+                    gradientColor={`#952CA1`}
+                >
+                    <span className='flex  justify-center items-center gap-2'>
+                        Connect on whatsapp
+                        {
+                            isLoading ?
+                                <Loader2 className='h-6 w-6 animate-spin' />
+                                : <MoveRight className='h-6 w-6' />
+                        }
+                    </span>
+                </Button>
+            </Link>
 
             <div className='absolute -top-28 right-[0%] max-sm:w-[100%] opacity-80'>
                 <svg className='max-sm:w-[100%]' width="517" height="569" viewBox="0 0 517 569" fill="none" xmlns="http://www.w3.org/2000/svg">

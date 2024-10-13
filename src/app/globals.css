@@ -180,6 +180,10 @@
   src: url('../../public/Fonts/Raleway-ExtraBold.ttf') format('truetype');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -325,8 +329,16 @@ body {
   line-height: var(--h6--line-height-2xl);
 }
 
-.text-gradient-animation {
+.text-gradient-animation1 {
   background-image: linear-gradient(241.55deg, #2600FC 30%, #f1f3f2, #FF00EA 50%);
+  background-size: 400% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateTextGradient 3s linear infinite alternate;
+}
+
+.text-gradient-animation2 {
+  background-image: linear-gradient(241.55deg, #FF00EA 50%, #f1f3f2, #2600FC 100%);
   background-size: 400% auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -336,12 +348,10 @@ body {
 @keyframes animateTextGradient {
   0% {
     background-position: 0% 50%;
-    /* Start from left */
   }
 
   100% {
     background-position: 100% 50%;
-    /* End at right */
   }
 }
 
@@ -601,12 +611,6 @@ body {
   background: radial-gradient(circle, hsla(294, 57%, 40%, 1) 20%, hsla(263, 100%, 50%, 1) 100%);
   padding-top: 1px;
   z-index: 20;
-}
-
-.up_border {
-  background: linear-gradient(90deg, hsla(294, 57%, 40%, 1) 0%, hsla(263, 100%, 50%, 1) 100%);
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 /* ---------------------------------Responsive Codes----------------------------- */

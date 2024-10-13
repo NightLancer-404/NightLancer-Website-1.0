@@ -7,6 +7,13 @@ const AnnouncementBanner = () => {
 
     const downloadBrochure = () => {
         setIsLoading(true);
+        const link = document.createElement('a');
+        link.href = '/Assets/Nightlancer_brochure.pdf';
+        link.setAttribute('download', 'NightLancer_Brochure.pdf');
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode?.removeChild(link);
+        setTimeout(() => setIsLoading(false), 1000);
     }
 
     return (

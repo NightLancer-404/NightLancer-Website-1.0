@@ -5,7 +5,7 @@ import ServicesCard1, { ServicesCard2 } from '../Assets/ServicesCard'
 
 const Services = () => {
     return (
-        <div className='services'>
+        <div className='services' id='services'>
             <div className='flex flex-col gap-16'>
                 <Headings
                     heading='Our Services'

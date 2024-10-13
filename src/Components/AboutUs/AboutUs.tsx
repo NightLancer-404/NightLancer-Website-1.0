@@ -6,7 +6,7 @@ import ImageCarousel from '../Assets/ImageCarousel'
 const AboutUs = () => {
     return (
         <>
-            <div className='px-[6.5rem] py-[4.5rem] max-[1200px]:px-[4rem] max-[991px]:px-[2.5rem] max-sm:px-6 relative'>
+            <div className='px-[6.5rem] py-[4.5rem] max-[1200px]:px-[4rem] max-[991px]:px-[2.5rem] max-sm:px-6 relative' id='aboutus'>
                 <div className='flex flex-col gap-12'>
                     <Headings
                         heading='About NightLancer'

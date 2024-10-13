@@ -14,7 +14,7 @@ const Sidebar = ({ active, setActive }: any) => {
                     <SquareX className='small_screen_cross' onClick={() => setActive(false)} />
                 </div>
                 <div className='nav_items_sidebar'>
-                    <Link href={'/'} className='group nav_item_sidebar' onClick={() => setActive(false)}>
+                    <Link href={'#home'} className='group nav_item_sidebar' onClick={() => setActive(false)}>
                         <span className='group-hover:opacity-60 flex justify-between items-center'>Home <img src="/images/Navbar/home.png" alt="Home" className='h-4 w-4' /></span>
                     </Link>
                     <Link href={'#whyus'} className='group nav_item_sidebar' onClick={() => setActive(false)}>
@@ -29,21 +29,21 @@ const Sidebar = ({ active, setActive }: any) => {
                     <Link href={'#roadmap'} className='group nav_item_sidebar' onClick={() => setActive(false)}>
                         <span className='group-hover:opacity-60 flex justify-between items-center'>Roadmap <img src="/images/Navbar/roadmap.png" alt="Roadmap" className='h-4 w-4' /></span>
                     </Link>
-                    <Link href={'#roadmap'} className='group nav_item_sidebar' onClick={() => setActive(false)}>
+                    <a href={'/Assets/Nightlancer_brochure.pdf'} download="NightLancer_Brochure.pdf" className='group nav_item_sidebar' onClick={() => setActive(false)}>
                         <span className='group-hover:opacity-60 flex justify-between items-center'>Download Brochure <img src="/images/Navbar/download.png" alt="Download Brochure" className='h-4 w-4' /></span>
-                    </Link>
-                    <Link href={'#roadmap'} className='group px-6 py-[.65rem]' onClick={() => setActive(false)}>
+                    </a>
+                    <Link href={'https://wa.me/918328837701'} target='_blank' className='group px-6 py-[.65rem]' onClick={() => setActive(false)}>
                         <span className='group-hover:opacity-60 flex justify-between items-center'>Contact Us <img src="/images/Navbar/whatsapp-2.png" alt="Contact Us" className='h-4 w-4' /></span>
                     </Link>
                 </div>
                 <div className='flex justify-center gap-6'>
-                    <Link href={'#'}>
+                    <Link href={'https://www.instagram.com/nightlancet_404/profilecard/?igsh=MWthOWFpMjJ5c3ZubA=='} target='_blank'>
                         <img src="/images/Navbar/instagram.png" alt="Instagram" className='h-8 w-8' />
                     </Link>
-                    <Link href={'#'}>
+                    <Link href={'https://www.youtube.com/@NightLancer-404'} target='_blank'>
                         <img src="/images/Navbar/youtube.png" alt="Youtube" className='h-8 w-8' />
                     </Link>
-                    <Link href={'#'}>
+                    <Link href={'https://www.facebook.com/profile.php?id=61566937717871&mibextid=ZbWKwL'} target='_blank'>
                         <img src="/images/Navbar/facebook.png" alt="Facebook" className='h-8 w-8' />
                     </Link>
                 </div>

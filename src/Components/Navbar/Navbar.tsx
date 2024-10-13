@@ -29,7 +29,7 @@ const Navbar = () => {
                     <img src="/images/Logos/Nightlancer-Logo.png" alt="LOGO" className='w-16' />
                 </Link>
                 <div className='nav_items'>
-                    <Link href={'/'} className='group'>
+                    <Link href={'#home'} className='group'>
                         <span className='group-hover:opacity-60'>Home</span>
                     </Link>
                     <Link href={'#whyus'} className='group'>
@@ -45,19 +45,21 @@ const Navbar = () => {
                         <span className='group-hover:opacity-60'>Roadmap</span>
                     </Link>
                 </div>
-                <div className='connect_button'>
-                    <Button
-                        containerClassName="rounded-full"
-                        as="button"
-                        className="px-6"
-                        gradientColor={fix ? `#6100FF` : `#952CA1`}
-                    >
-                        <span>Connect On Whatsapp</span>
-                    </Button>
-                </div>
-                <div className='whatsapp_button'>
-                    <img src="/images/Navbar/whatsapp.svg" alt="WhatsApp" className='h-8 w-8' />
-                </div>
+                <Link href={'https://wa.me/918328837701'} target='_blank'>
+                    <div className='connect_button'>
+                        <Button
+                            containerClassName="rounded-full"
+                            as="button"
+                            className="px-6"
+                            gradientColor={fix ? `#6100FF` : `#952CA1`}
+                        >
+                            <span>Connect On Whatsapp</span>
+                        </Button>
+                    </div>
+                    <div className='whatsapp_button'>
+                        <img src="/images/Navbar/whatsapp.svg" alt="WhatsApp" className='h-8 w-8' />
+                    </div>
+                </Link>
                 <div className='small_screen_nav_button'>
                     <img src="/images/Navbar/menu.svg" alt="Menu" className='h-8 w-8' onClick={() => setActive(true)} />
                 </div>

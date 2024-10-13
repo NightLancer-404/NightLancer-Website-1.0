@@ -1,4 +1,4 @@
-import images from "../Assets/Image";
+import { images } from "../../Data/Image";
 
 const row1 = images.row1;
 const row2 = images.row2;

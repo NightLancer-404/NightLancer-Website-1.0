@@ -1,35 +1,13 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Headings from '../Assets/Headings'
 import WhyUsCard from '../Assets/WhyUsCard'
+import { WhyUsCardData } from '../../Data/whyUsData'
 
 const WhyUs = () => {
-    const WhyUsCardData = [
-        {
-            name: '100% Assurance',
-            desc: 'We ensure 100% trust to our clients and their businesses.',
-            src: '/images/Why-Choose-us/Assurance.webp'
-        },
-        {
-            name: 'Timely Delivery',
-            desc: 'We consistently deliver high-quality work on time.',
-            src: '/images/Why-Choose-us/Timely-deliver.webp'
-        },
-        {
-            name: 'Industrial Benchmark',
-            desc: 'We ensure our work meets industry benchmarks.',
-            src: '/images/Why-Choose-us/Industry-benchmark.webp'
-        },
-        {
-            name: 'Affordable Price',
-            desc: 'We offer services to all businesses at very affordable prices.',
-            src: '/images/Why-Choose-us/Affordable-price.webp'
-        }
-
-    ]
 
     return (
-        <div className='px-[6.5rem] py-[4.5rem] max-[1200px]:px-[4rem] max-[991px]:px-[2.5rem] max-sm:px-6 relative'>
+        <div className='px-[6.5rem] py-[4.5rem] max-[1200px]:px-[4rem] max-[991px]:px-[2.5rem] max-sm:px-6 relative' id='whyus'>
             <div className='flex flex-col gap-12'>
                 <Headings
                     heading='Why Choose Us'
